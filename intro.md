@@ -1,11 +1,6 @@
-# Abi & Ning's First JB
+# Quick Recap
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
-
-Check out the content pages bundled with this sample book to see more.
+In this technical training session, Abi guided Ning through the process of setting up and using Jupyter Book to create a website in a book format, including installation of necessary tools and configuration of GitHub repositories. Abi demonstrated various aspects of website development and content management, covering topics like Git usage, VS Code setup, and deployment through Github Pages. The session concluded with instructions for installing Xcode and using GitHub for code sharing and collaboration, with Abi offering ongoing support and guidance for Ning's development work.
 
 ```{tableofcontents}
 ```
