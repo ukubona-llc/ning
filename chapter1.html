@@ -63,7 +63,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Chapter 2" href="chapter2.html" />
-    <link rel="prev" title="Abi &amp; Ning’s First JB" href="intro.html" />
+    <link rel="prev" title="Quick Recap" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Abi & Ning’s First JB
+                    Quick Recap
                 </a>
             </li>
         </ul>
@@ -380,10 +380,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website-design-learning-session">Website Design Learning Session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-cloning-and-building">Jupyter Book Cloning and Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github-usage-tutorial">Git and GitHub Usage Tutorial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-website-deployment">Github Pages Website Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-creation-and-editing">Jupyter Book Creation and Editing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-project-demonstration">Jupyter Book Project Demonstration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code-setup-instructions">Visual Studio Code Setup Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rheumatology-data-access-challenges">Rheumatology Data Access Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xcode-installation-guide-for-ning">Xcode Installation Guide for Ning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-code-collaboration-demo">GitHub Code Collaboration Demo</a></li>
 </ul>
             </nav>
         </div>
@@ -397,56 +403,58 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="chapter-1">
 <h1>Chapter 1<a class="headerlink" href="#chapter-1" title="Permalink to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>. <span id="id1">[<a class="reference internal" href="#id4" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+<section id="website-design-learning-session">
+<h2>Website Design Learning Session<a class="headerlink" href="#website-design-learning-session" title="Permalink to this heading">#</a></h2>
+<p>Abi guided Ning through the process of setting up and using Jupyter Book, a tool for creating web pages, on a Mac. They discussed the installation of Python and Jupyter Notebook, as well as the use of terminal commands to create a book template. Abi explained that while Python knowledge is not required, tools like ChatGPT can assist in generating code.</p>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Permalink to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <span class="xref std std-doc">markdown-notebooks</span>.</p>
-</section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id2">[<a class="reference internal" href="#id4" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id3">
-<dl class="citation">
-<dt class="label" id="id4"><span class="brackets">HdHPK14</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id2">2</a>)</span></dt>
-<dd><p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</dd>
-</dl>
+<section id="jupyter-book-cloning-and-building">
+<h2>Jupyter Book Cloning and Building<a class="headerlink" href="#jupyter-book-cloning-and-building" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to clone and build a Jupyter Book project using GitHub and VS Code. He showed Ning how to create a repository, copy the book’s contents, and build the HTML files locally. Abi emphasized the importance of using VS Code as a development environment and promised to send Ning detailed instructions via email (nah - via a temporary <code class="docutils literal notranslate"><span class="pre">github</span> <span class="pre">repo</span></code>).</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ukubona-llc/ning
+</pre></div>
 </div>
 </section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Permalink to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<section id="git-and-github-usage-tutorial">
+<h2>Git and GitHub Usage Tutorial<a class="headerlink" href="#git-and-github-usage-tutorial" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to use Git and GitHub, including committing changes, writing commit messages, and pushing content to a repository. He encountered some access issues but resolved them by inviting himself as a collaborator on the company website. Abi explained that using multiple GitHub accounts on the same computer can be complex, and he chose to invite his personal account as a simpler solution.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;debug display command&quot;</span>
+git<span class="w"> </span>push
+</pre></div>
+</div>
+</section>
+<section id="github-pages-website-deployment">
+<h2>Github Pages Website Deployment<a class="headerlink" href="#github-pages-website-deployment" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to set up and deploy a website using Github Pages, showing Ning the process of importing content, creating branches, and configuring settings. He explained how to work locally with a main branch while keeping the website content on a separate branch, and emphasized the importance of backing up work to Github rather than relying solely on local storage. Abimereki also showed how to update and modify the website content through the command line, using a demo title as an example.</p>
+</section>
+<section id="jupyter-book-creation-and-editing">
+<h2>Jupyter Book Creation and Editing<a class="headerlink" href="#jupyter-book-creation-and-editing" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to create and edit a Jupyter Book, including changing chapter titles, updating the table of contents, and configuring the book’s title, authors, and logo. He showed how to edit and build HTML locally before publishing to the internet, and explained that the book supports Python, Stata, and R code blocks. Abi encountered an issue running Stata code in the Jupyter environment, noting that additional setup would be needed to use Stata in the book.</p>
+</section>
+<section id="jupyter-book-project-demonstration">
+<h2>Jupyter Book Project Demonstration<a class="headerlink" href="#jupyter-book-project-demonstration" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to update content, change logos, and add references in a Jupyter book project. He showed how to use Git and GitHub to track changes and push updates to a website. Abi explained the process of adding Python code and its output to the book, highlighting the collaborative and teaching potential of this tool.</p>
+</section>
+<section id="visual-studio-code-setup-instructions">
+<h2>Visual Studio Code Setup Instructions<a class="headerlink" href="#visual-studio-code-setup-instructions" title="Permalink to this heading">#</a></h2>
+<p>Abi provided instructions to Ning for setting up Visual Studio Code on a Mac. He mentioned using an internship portal to access a token for setup, but noted that this method could allow others to access Ning’s GitHub if using a borrowed computer. Abi suggested a more complex, automated approach that allows for creating and destroying the setup as needed. He promised to send instructions for the onboarding process and an access token. Abimereki also advised Ning to reach out via WhatsApp or email if she encountered any issues during the setup.</p>
+<p><img alt="" src="_images/internship-portal.png" /></p>
+<p>Just add access token to make it work (ask me via whatsApp for token)</p>
+</section>
+<section id="rheumatology-data-access-challenges">
+<h2>Rheumatology Data Access Challenges<a class="headerlink" href="#rheumatology-data-access-challenges" title="Permalink to this heading">#</a></h2>
+<p>Abiand Ning discussed Ning’s work in rheumatology and the challenges of accessing data through a slow remote desktop. Abimereki warned Ning about potential security issues with the first step of installing VS code and offered to send her a summary of their discussion. He advised Ning to practice creating and destroying books and emphasized the importance of setting up Python and a local environment for the internship.</p>
+</section>
+<section id="xcode-installation-guide-for-ning">
+<h2>Xcode Installation Guide for Ning<a class="headerlink" href="#xcode-installation-guide-for-ning" title="Permalink to this heading">#</a></h2>
+<p>Abi guided Ning through the process of installing and verifying Xcode, the Apple development environment, on their computer. He explained that the installation process can take 5 to 10 minutes and may appear unresponsive, but it is crucial for development. Abi provided a command for checking if Xcode is installed and advised Ning to start with Part A of the installation process, with Part B recommended for later.</p>
+</section>
+<section id="github-code-collaboration-demo">
+<h2>GitHub Code Collaboration Demo<a class="headerlink" href="#github-code-collaboration-demo" title="Permalink to this heading">#</a></h2>
+<p>Abi demonstrated how to use GitHub for sharing and collaborating on code, particularly for Stata and terminal files. He showed Ning how to create a new file, access raw URLs, and update code, explaining the benefits of using GitHub over email for code sharing. Abimereki also covered how to install software using GitHub, including VS Code and Jupyter Book, and offered to help Ning with any questions she might have.</p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">do</span> https:<span class="o">//</span>raw<span class="m">.</span>githubusercontent<span class="m">.</span>com<span class="o">/</span>ukubona<span class="o">-</span>llc<span class="o">/</span>ning<span class="o">/</span>refs<span class="o">/</span>heads<span class="o">/</span>main<span class="o">/</span>demo<span class="m">.</span>do
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -486,7 +494,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Abi &amp; Ning’s First JB</p>
+        <p class="prev-next-title">Quick Recap</p>
       </div>
     </a>
     <a class="right-next"
@@ -514,10 +522,16 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website-design-learning-session">Website Design Learning Session</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-cloning-and-building">Jupyter Book Cloning and Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-and-github-usage-tutorial">Git and GitHub Usage Tutorial</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-pages-website-deployment">Github Pages Website Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-creation-and-editing">Jupyter Book Creation and Editing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-book-project-demonstration">Jupyter Book Project Demonstration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code-setup-instructions">Visual Studio Code Setup Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rheumatology-data-access-challenges">Rheumatology Data Access Challenges</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xcode-installation-guide-for-ning">Xcode Installation Guide for Ning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-code-collaboration-demo">GitHub Code Collaboration Demo</a></li>
 </ul>
   </nav></div>
 
