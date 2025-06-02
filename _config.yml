@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: My sample book
-author: The Jupyter Book Community
-logo: logo.png
+title: Demo Book
+author: Abi & Ning
+logo: https://static.nc-img.com/uxteam/lc.simple-pages/nclabs-logo-maker-articles/img/apple.da21b76d.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
